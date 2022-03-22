@@ -350,6 +350,13 @@ figure {
     }
 }
 @media (min-width: 301px) and (max-width: 360px) {
+	.wpo-hero-section-1 .right-vec {
+    display: none;
+}
+	.wpo-hero-section-1
+	{
+		height:160px !important;
+	}
     .s1 {   
     height: 50vh !important;
     }
@@ -779,7 +786,7 @@ figure {
     }
     #hero .hero-container {
         position: absolute !important;
-        padding: 450px 0 0 0 !important;
+/*        padding: 450px 0 0 0 !important;*/
         left: 19% !important;
        
     }
@@ -1085,7 +1092,7 @@ section {
 }
 #hero:before {
     content: "";
-    background: rgba(5, 13, 24, 0.3);
+    background: #fff;
     position: absolute;
     bottom: 0;
     top: 0;
@@ -1724,19 +1731,42 @@ Main Components
 }
 /*.....................*/
 
-.right-img img {
+
+
+
+
+.wpo-hero-section-1 {
+    position: relative;
+    height: 1000px;
+    background-color: #fff;
+/*    display: flex;*/
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1;
+}
+.wpo-hero-section-1 .wpo-hero-section-text {
+    padding-top: 80px;
+}
+.wpo-hero-section-1 .wpo-hero-title h2 {
+    font-size: 130px;
+    font-weight: 700;
+    line-height: 115px;
+    margin: 10px 0 25px;
+    color: #fff;
+}
+.wpo-hero-section-1 .right-vec {
+    position: absolute;
+    right: 250px;
+    top: 53%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+.wpo-hero-section-1 .right-vec .right-img img {
     -webkit-animation: bounce 3s linear infinite;
     animation: bounce 3s linear infinite;
 }
-.right-vec {
-   position: absolute;
-    right: 323px;
-    top: 0%;
-    transform: translateY(29%);
-    z-index: 1;
-}
 
-.round-1 {
+.wpo-hero-section-1 .right-vec .round-1 {
     width: 754px;
     height: 754px;
     border: 1px dashed #ffb100;
@@ -1748,7 +1778,7 @@ Main Components
     -webkit-animation: circle 60s linear infinite;
     animation: circle 60s linear infinite;
 }
-.round-2 {
+.wpo-hero-section-1 .right-vec .round-2 {
     width: 634px;
     height: 634px;
     border: 1px solid #ffb100;
@@ -1760,7 +1790,7 @@ Main Components
     -webkit-animation: circle 60s linear infinite;
     animation: circle 60s linear infinite;
 }
-.round-3 {
+.wpo-hero-section-1 .right-vec .round-3 {
     width: 535px;
     height: 535px;
     border: 1px dashed #ffb100;
@@ -1772,7 +1802,7 @@ Main Components
     -webkit-animation: circle 60s linear infinite;
     animation: circle 60s linear infinite;
 }
-.round-4 {
+.wpo-hero-section-1 .right-vec .round-4 {
     width: 424px;
     height: 424px;
     border: 1px solid #ffb100;
